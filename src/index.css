@@ -1,0 +1,102 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #1a2027;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+
+  --libertadores: #0000ff;
+  --pre-libertadores: #00ffff;
+  --sul-americana: #008000;
+  --limbo: #999999;
+  --zona: #FF0000;
+
+  --button-default: #0d0d0d;
+  --button-active: #8888f8;
+  --button-text-color: #ffffff;
+
+  --table-background: #121212;
+  --loading-color: #ffffff;
+}
+
+* { 
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.libertadores {
+  color: var(--libertadores);
+}
+
+.pre-libertadores {
+  color: var(--pre-libertadores);
+}
+
+.sul-americana {
+  color: var(--sul-americana);
+}
+
+.limbo {
+  color: var(--limbo);
+}
+
+.zona {
+  color: var(--zona);
+}
+
+.app-container {
+  padding: 1rem;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.app-title {
+  text-align: center;
+}
+
+.app-options {
+  display: flex;
+  align-items: center;
+  margin: 1rem auto;
+  gap: 1rem;
+}
+
+.app-options button {
+  flex: 1;
+  padding: 1rem;
+  cursor: pointer;
+  border: none;
+  border-radius: 4px;
+  background-color: var(--button-default);
+  color: var(--button-text-color);
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.app-options button.active {
+  background-color: var(--button-active);
+}
+
+.app-options button:hover {
+  opacity: 0.9;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #E7EBF0;
+    --button-active: #2d2df5;
+    --button-default: #939393;
+    --table-background: #ffffff;
+    --loading-color: #121212;
+  }
+}

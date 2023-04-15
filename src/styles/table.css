@@ -1,0 +1,44 @@
+.table {
+  display: block;
+  width: 100%;
+  border-radius: 4px;
+  padding: 1rem 2rem;
+  background-color: var(--table-background);
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 1px -1px, rgba(0, 0, 0, 0.14) 0px 1px 1px 0px, rgba(0, 0, 0, 0.12) 0px 1px 3px 0px;
+}
+
+.table-head,
+.team-standing {
+  display: flex;
+  align-items: center;
+}
+
+.table-title {
+  margin: 1rem auto;
+}
+
+.position,
+.points {
+  flex: 1;
+}
+
+.team, .info {
+  flex: 10;
+}
+
+.table-head p {
+  font-weight: 700;
+}
+
+.team-standing {
+  padding: 8px 0;
+}
+
+.team-standing .position p,
+.team-standing .info .name {
+  font-weight: 700;
+}
+
+.team-standing .info .manager {
+  font-size: 0.9rem;
+}
