@@ -13,7 +13,7 @@ export async function getStandings(){
     return data;
   });
 
-  const orderedByPoints = standings.sort((a, b) => a.pontos - b.pontos);
+  const orderedByPoints = standings.sort((a, b) => b.pontos_campeonato - a.pontos_campeonato);
 
   return orderedByPoints;
 }
