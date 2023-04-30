@@ -1,30 +1,17 @@
 import { useEffect, useState } from 'react';
-import { getStandings } from '../../api/standings';
 import { Team } from '../../models/team.interface';
-import Loading from '../Loading';
 
+import data from '../../data/standings.json';
 import '../../styles/table.css';
-
 
 function LeagueTable() {
 
   const [standings, setStandings] = useState<Team[]>();
-  const [isLoading, setIsLoading] = useState(true);
 
-  useEffect(() => {
-    const loadStandings = () => {
-      getStandings().then(data => {
-        setStandings(data)
-        setIsLoading(false);
-      })
-    }
-
-    loadStandings();
-  }, [])
+  useEffect(() => setStandings(data), [])
 
   return (
     <>
-    {isLoading && <Loading />}
     <div className="league-table">
       <h3 className="table-title">Classificação</h3>
 
