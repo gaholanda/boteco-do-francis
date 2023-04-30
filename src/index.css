@@ -18,6 +18,7 @@
   --sul-americana: #008000;
   --limbo: #999999;
   --zona: #FF0000;
+  --zona-playoffs: #ffa500;
 
   --button-default: #0d0d0d;
   --button-active: #8888f8;
@@ -51,6 +52,10 @@
 
 .zona {
   color: var(--zona);
+}
+
+.zona-playoffs {
+  color: var(--zona-playoffs);
 }
 
 .app-container {

@@ -10,6 +10,11 @@ function LeagueTable() {
 
   useEffect(() => setStandings(data), [])
 
+  // Libertadores     20% - 5
+  // Pré-libertadores  2% - 2
+  // Sul-Americana    30% - 9
+  // Rebaixamento     20% - 6
+
   return (
     <>
     <div className="league-table">
@@ -28,11 +33,12 @@ function LeagueTable() {
               (standing, i) => (
                 <div key={standing.time.time_id} className="team-standing">
                   <div className="position">
-                    { i+1 <= 4 && <p className="libertadores">{i+1}</p>}
-                    { i+1 >= 5 && i+1 <= 6 && <p className="pre-libertadores">{i+1}</p>}
-                    { i+1 >= 7 && i+1 <= 12 && <p className="sul-americana">{i+1}</p>}
-                    { i+1 >= 13 && i+1 <= 24 && <p className="limbo">{i+1}</p>}
-                    { i+1 > 24 && <p className="zona">{i+1}</p>}
+                    { i+1 <= 5 && <p className="libertadores">{i+1}</p>}
+                    { i+1 >= 6 && i+1 <= 7 && <p className="pre-libertadores">{i+1}</p>}
+                    { i+1 >= 8 && i+1 <= 16 && <p className="sul-americana">{i+1}</p>}
+                    { i+1 >= 17 && i+1 <= 23 && <p className="limbo">{i+1}</p>}
+                    { i+1 >= 24 && i+1 <= 27 && <p className="zona-playoffs">{i+1}</p>}
+                    { i+1 > 27 && <p className="zona">{i+1}</p>}
                   </div>
                   <div className="info">
                     <p className="name">{standing.time.nome}</p>
