@@ -22,7 +22,7 @@ function LeagueTable() {
 
       <div className="table">
         <div className="table-head">
-          <p className="position">Pos.</p>
+          <p className="position">#</p>
           <p className="team">Time</p>
           <p className="points">Pontos</p>
         </div>

@@ -15,11 +15,16 @@
 
 .table-title {
   margin: 1rem auto;
+  text-align: center;
 }
 
 .position,
 .points {
   flex: 1;
+}
+
+.position {
+  min-width: 35px;
 }
 
 .team, .info {
@@ -39,6 +44,10 @@
   font-weight: 700;
 }
 
+.team-standing .info .name {
+  font-size: 0.95rem;
+}
+
 .team-standing .info .manager {
-  font-size: 0.9rem;
+  font-size: 0.8rem;
 }
