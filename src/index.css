@@ -13,12 +13,12 @@
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
 
-  --libertadores: #0000ff;
-  --pre-libertadores: #00ffff;
-  --sul-americana: #008000;
-  --limbo: #999999;
-  --zona: #FF0000;
-  --zona-playoffs: #ffa500;
+  --serie-a: #008000;
+  --serie-b: #ffa500;
+  --posicao-padrao: #999999;
+  --top-3: #0000ff;
+  --top-5: #00ffff;
+  --rebaixamento: #FF0000;
 
   --button-default: #0d0d0d;
   --button-active: #8888f8;
@@ -34,28 +34,28 @@
   box-sizing: border-box;
 }
 
-.libertadores {
-  color: var(--libertadores);
+.serie-a {
+  color: var(--serie-a);
 }
 
-.pre-libertadores {
-  color: var(--pre-libertadores);
+.serie-b {
+  color: var(--serie-b);
 }
 
-.sul-americana {
-  color: var(--sul-americana);
+.posicao-padrao {
+  color: var(--posicao-padrao);
 }
 
-.limbo {
-  color: var(--limbo);
+.top-3 {
+  color: var(--top-3);
 }
 
-.zona {
-  color: var(--zona);
+.top-5 {
+  color: var(--top-5);
 }
 
-.zona-playoffs {
-  color: var(--zona-playoffs);
+.rebaixamento {
+  color: var(--rebaixamento);
 }
 
 .app-container {
@@ -98,10 +98,10 @@
 @media (prefers-color-scheme: light) {
   :root {
     color: #213547;
-    background-color: #E7EBF0;
+    background-color: #ffffff;
     --button-active: #2d2df5;
     --button-default: #939393;
-    --table-background: #ffffff;
+    --table-background: #E7EBF0;
     --loading-color: #121212;
   }
 }

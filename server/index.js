@@ -22,6 +22,7 @@ function getAllTeams() {
     9426785, // Fla shiploader
     8998258, // Fludsnense
     26328142, // Giozcracia Futebol e Churrasco
+    2875774, // Jolly Rogers
     13549, // Hulk, o Magnata
     25669404, // Iza
     4499126, // Jontex
